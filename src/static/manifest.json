@@ -1,0 +1,9 @@
+{
+	"short_name": "website",
+	"name": "Template-Static-Website",
+	"display": "browser",
+	"background_color": "#4d90fe",
+	"theme_color": "#4d90fe",
+	"start_url": "/index.html",
+	"icons": [ ]
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="theme-color" content="#4d90fe">
+    <link rel="manifest" href="/manifest.json">
+    <title>Template-Static-Website</title>
+</head>
+<body>
+<section>
+    <div class="container">
+        <h1>Template-Static-Website</h1>
+        <ul>
+            <li>Webpack v2</li>
+            <li>TypeScript</li>
+            <li>Sass</li>
+            <li>PostCSS</li>
+            <li>Support Japanese</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2>Typography / タイポグラフィ</h2>
+
+        <div class="SampleBox">
+            <h1>Header Level1 / 見出しレベル1</h1>
+            <h2>Header Level2 / 見出しレベル2</h2>
+            <h3>Header Level3 / 見出しレベル3</h3>
+            <h4>Header Level4 / 見出しレベル4</h4>
+            <h5>Header Level5 / 見出しレベル5</h5>
+            <h6>Header Level6 / 見出しレベル6</h6>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum.</p>
+            <p>
+                あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、いまこの暗い巨きな石の建物のなかで考えていると、みんなむかし風のなつかしい青い幻燈のように思われます。では、わたくしはいつかの小さなみだしをつけながら、しずかにあの年のイーハトーヴォの五月から十月までを書きつけましょう。</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2>Code Block / コードブロック</h2>
+
+        <div class="SampleBox">
+                <pre><code>{
+	"short_name": "my website",
+	"name": "Static My Website",
+	"display": "browser",
+	"background_color": "#4d90fe",
+	"theme_color": "#4d90fe",
+	"start_url": "/index.html",
+	"icons": [ ]
+}</code></pre>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>
+
+<section>
+    <div class="container">
+        <h2>Grid System / グリッドシステム</h2>
+        <p>Column Gutter Width = <code>16px</code> (Bootstrap original = <code>30px</code>)</p>
+
+        <div class="SampleBox">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="Cell-Inner">12</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-11">
+                    <div class="Cell-Inner">11</div>
+                </div>
+                <div class="col-md-1">
+                    <div class="Cell-Inner">1</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="Cell-Inner">10</div>
+                </div>
+                <div class="col-md-2">
+                    <div class="Cell-Inner">2</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="Cell-Inner">9</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="Cell-Inner">3</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="Cell-Inner">8</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="Cell-Inner">4</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="Cell-Inner">7</div>
+                </div>
+                <div class="col-md-5">
+                    <div class="Cell-Inner">5</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="Cell-Inner">6</div>
+                </div>
+                <div class="col-md-6">
+                    <div class="Cell-Inner">6</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2>Form / フォーム</h2>
+        <div class="row">
+            <div class="SampleBox">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email"
+                               class="form-control"
+                               id="exampleInputEmail1"
+                               aria-describedby="emailHelp"
+                               placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleSelect1">Example select</label>
+                        <select class="form-control" id="exampleSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleSelect2">Example multiple select</label>
+                        <select multiple class="form-control" id="exampleSelect2">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleTextarea">Example textarea</label>
+                        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile">File input</label>
+                        <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                        <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text
+                            for the above input. It's a bit lighter and easily wraps to a new line.
+                        </small>
+                    </div>
+                    <fieldset class="form-group">
+                        <legend>Radio buttons</legend>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio"
+                                       class="form-check-input"
+                                       name="optionsRadios"
+                                       id="optionsRadios1"
+                                       value="option1"
+                                       checked>
+                                Option one is this and that&mdash;be sure to include why it's great
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio"
+                                       class="form-check-input"
+                                       name="optionsRadios"
+                                       id="optionsRadios2"
+                                       value="option2">
+                                Option two can be something else and selecting it will deselect option one
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <label class="form-check-label">
+                                <input type="radio"
+                                       class="form-check-input"
+                                       name="optionsRadios"
+                                       id="optionsRadios3"
+                                       value="option3"
+                                       disabled>
+                                Option three is disabled
+                            </label>
+                        </div>
+                    </fieldset>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            Check me out
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+</section>
+
+</body>
+
+</html>
