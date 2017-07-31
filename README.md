@@ -1,12 +1,8 @@
 # Template-Static-Website
 
-## Features
+## Requirements
 
-- Webpack v2
-- TypeScript
-- Sass
-- PostCSS
-- Extract script and css into html
+- Node v8+
 
 ## How to run
 

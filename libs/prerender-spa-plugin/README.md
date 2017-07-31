@@ -1,0 +1,1 @@
+This webpack plugin is forked from [chrisvfritz/prerender-spa-plugin](https://github.com/chrisvfritz/prerender-spa-plugin)
