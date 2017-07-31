@@ -1,1 +1,1 @@
-import './bootstrap/bootstrap.scss';
+export * from './bootstrap/bootstrap.scss';

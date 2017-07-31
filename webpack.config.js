@@ -3,6 +3,7 @@ const { CheckerPlugin } = require('awesome-typescript-loader');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+const HTMLWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
 const path = require('path');
 
 const PrerenderSpaPlugin = require('./libs/prerender-spa-plugin');
@@ -108,7 +109,7 @@ function generateConfiguration(entryFilePath, htmlTemplatePath, chunkName, outpu
 				path.join(__dirname, './src'),
 				path.join(__dirname, './node_modules'),
 			],
-			extensions: ['.ts', '.scss']
+			extensions: ['.ts', '.tsx', '.js', '.jsx', '.scss', '.css']
 		},
 		plugins: ([
 			process.env.DEBUG ? null : new webpack.DefinePlugin({
@@ -122,14 +123,15 @@ function generateConfiguration(entryFilePath, htmlTemplatePath, chunkName, outpu
 			}),
 			new CheckerPlugin(),
 			process.env.NODE_ENV === 'production' ? new webpack.optimize.UglifyJsPlugin() : null,
-			// process.env.NODE_ENV == 'production' ? new UglifyJSPlugin() : null,
 			new HTMLWebpackPlugin({
 				filename: htmlOutputPath,
 				inject: 'head',
 				template: htmlTemplatePath,
 				chunks: [chunkName],
+				inlineSource: '.(css)$',
 				minify: process.env.NODE_ENV === 'production'
 			}),
+			new HTMLWebpackInlineSourcePlugin(),
 			new PrerenderSpaPlugin(
 				outputRoot,
 				[path.join('/', htmlOutputPath)],
@@ -147,5 +149,5 @@ function generateConfiguration(entryFilePath, htmlTemplatePath, chunkName, outpu
 }
 
 module.exports = [
-	generateConfiguration('./src/page/index/script.ts', './src/page/index/index.html.ejs', 'index', './build', './')
+	generateConfiguration('./src/page/index/script.tsx', './src/page/index/index.html.ejs', 'index', './build', './')
 ];

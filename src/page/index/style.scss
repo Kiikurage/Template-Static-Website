@@ -1,29 +1,13 @@
 @import "../../stylus/bootstrap-mixin";
 
 section {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 16px;
+
   @include media-breakpoint-down(md) {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 8px;
   }
 
   &:not(:first-child) {
     border-top: 1px solid #ccc;
   }
-}
-
-.Cell-Inner {
-  margin: 8px 0;
-  padding: 0 8px;
-  border-radius: 5px;
-  line-height: 48px;
-  background: #aaeef8;
-}
-
-.SampleBox {
-  margin: 16px 0;
-  background: #f7f7f9;
-  padding: 16px;
-  border-radius: 5px;
 }
